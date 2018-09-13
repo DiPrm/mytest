@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>777</title>
+</head>
+ <style>
+   body {background-color:black; color:white;}
+   
+   .hide, .hide2 {display:none}
+   
+   .obj:hover+span {display:inline;}
+   
+   div.main { max-width:900px; margin:0 auto; background-color:#A16A55; height:500px; }
+   
+   div.products {
+     width:100%;
+	 border:1px solid white;
+	 display:flex;
+	 justify-content:space-around;
+	 flex-wrap:wrap;
+   }
+   
+   div.products img {
+   
+	 border-radius:50px;
+   }
+   
+   div.products .pro {
+     display:flex;
+	 flex-direction:column;
+	 padding:10px;
+	 height:auto;
+	 color:white;
+	 border:1px solid #ccc;
+    text-align:center;
+	background-color:black;
+	padding-top:auto;
+	padding-bottom:auto;
+	margin-top:10px;
+   }
+   
+   div.price {margin-bottom:10px; width:100%; margin-top:auto;}
+   
+   div.products button {
+     margin-top:auto;
+   }
+   
+   h3 {width:100px;}
+   
+   @media screen and (max-width: 980px) {
+        div.products .pro {
+		 flex-basis:25%;
+		}
+		h3 {width:100%;}
+   }
+   
+   @media screen and (max-width: 560px) {
+        div.products .pro {
+		 flex-basis:100%;
+		}
+		h3 {width:100%;}
+
+   }
+ </style>
+<body>
+<span class="obj">hover me</span>
+<span class="hide">wow!</span>
+<span class="hide2">wow!!</span>
+<div class="main">
+ <div class="products">
+  <div class="pro"><div style="width:100%"><img src="apple.jpg"></div><h3>prod1 prod3 prod4</h3><div class="price">100</div><button>buy it</button></div>
+  <div class="pro"><div style="width:100%"><img src="apple.jpg"></div><h3>prod2</h3><div class="price">200</div><button>buy it</button></div>
+  <div class="pro"><div style="width:100%"><img src="apple.jpg"></div><h3>prod3</h3><div class="price">300</div><button>buy it</button></div>
+  <div class="pro"><div style="width:100%"><img src="apple.jpg"></div><h3>prod2</h3><div class="price">200</div><button>buy it</button></div>
+  <div class="pro"><div style="width:100%"><img src="apple.jpg"></div><h3>prod3</h3><div class="price">300</div><button>buy it</button></div>
+  <div class="pro"><div style="width:100%"><img src="apple.jpg"></div><h3>prod3</h3><div class="price">300</div><button>buy it</button></div>
+ </div>
+</div>
+</body>
+</html>
