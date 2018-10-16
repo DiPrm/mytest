@@ -16,15 +16,91 @@
 
  });
 
+ var Wid = 50;
+
+ var text = 'hallo';
+
+
+ function incWidth () {
+  tb = document.getElementById('table1');
+
+  Wid = (Wid>500)?50:Wid += 50;
+
+  tb.rows[1].cells[2].style.width=Wid+'px';
+
+//var tx = $(tb).text();
+
+ var tx = tb.rows[1].cells[2].innerHTML;
+
+ var wh = tb.rows[1].cells[2].clientWidth;
+
+ document.title = tx.length;
+
+ var kf = (wh/tx.length)*tx.length*0.38; 
+
+ var txt = tx.substr(0,kf);
+
+ tb.rows[1].cells[2].innerHTML = txt+'..';
+
+ }
+
+function incText() {
+  tb = document.getElementById('table1');
+
+  var tx = tb.rows[1].cells[2].innerHTML;
+
+
+  if (tx.length>600) { 
+    tb.rows[1].cells[2].innerHTML=text; 
+  } else {
+    tb.rows[1].cells[2].innerHTML=tx+text;
+  }
+
+
+var tx = tb.rows[1].cells[2].innerHTML;
+
+var wh = tb.rows[1].cells[2].clientWidth;
+
+document.title = tx.length;
+
+var kf = (wh/tx.length)*tx.length*0.38; 
+
+var txt = tx.substr(0,kf);
+
+tb.rows[1].cells[2].innerHTML = txt+'..';
+
+}
+
 window.onload=function() {
 
-var ab = 0;
-
-go(ab);
 
 tb = document.getElementById('table1');
 
-tb.rows[0].cells[2].style.width='200px';
+tb.rows[1].cells[2].style.width='150px';
+
+//var tx = $(tb).text();
+
+var tx = tb.rows[1].cells[2].innerHTML;
+
+var wh = tb.rows[1].cells[2].clientWidth;
+
+document.title = tx.length;
+
+//var kf = (wh/tx.length)*35; //90
+
+
+//var kf = (wh/tx.length)*100; //250
+
+//var kf = (wh/tx.length)*150; //445  //kf 0.38
+
+var kf = (wh/tx.length)*tx.length*0.38; 
+
+var txt = tx.substr(0,kf);
+
+tb.rows[1].cells[2].innerHTML = txt+'..';
+
+
+//$(tb).text(txt);
 
 
  // for (i=0;  i<tb.rows[0].cells.length; i++) {
@@ -33,12 +109,11 @@ tb.rows[0].cells[2].style.width='200px';
   //}
 }
 
-function go() {
-  return;
-}
     </script>
 </head>
 <body>
+  <span onclick="incText()">+text</span> |
+  <span onclick="incWidth()">+width</span>
 <table id="table1" class="tg">
   <tr>
     <th style="width:100px" class="tg-0lax">first</th>
@@ -52,7 +127,9 @@ function go() {
   <tr>
     <td  class="tg-0pky">second</td>
     <td class="tg-0lax">second</td>
-    <td class="tg-0lax">second<br></td>
+    <td class="tg-0lax">enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
     <td class="tg-0lax">second</td>
     <td class="tg-0lax">wsws</td>
     <td class="tg-0lax">wsw</td>
