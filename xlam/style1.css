@@ -1,0 +1,76 @@
+
+
+/* Start:/bitrix/components/hl/doska.list.konkurent/templates/.default/style.css?1481112047805*/
+.lk_wrapper {
+}
+
+.lk_table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lk_row {
+    display: table-row;
+}
+
+.lk_row {
+    display: table-row;
+}
+
+.lk_row.head {
+    font-weight: bold;
+    background: #eee;
+
+}
+
+.lk_row.date {
+    font-weight: bold;
+    background: #fffae8;
+}
+
+.lk_col {
+    display: table-cell;
+    border: 1px solid #ccc;
+}
+
+.lk_c100 {
+    width: 100%;
+    padding: 8px;
+}
+
+.lk_c50 {
+    width: 50%;
+    padding: 8px;
+}
+
+.lk_c20 {
+    width: 20%;
+    padding: 8px;
+}
+
+.lk_c15 {
+    width: 15%;
+    padding: 8px;
+}
+
+.lk_c10 {
+    width: 15%;
+    padding: 8px;
+}
+
+.lk_c5 {
+    width: 5%;
+    padding: 8px;
+}
+
+.lk_time {
+    color: #999;
+}
+
+.lk_date {
+    font-weight: bold;
+    paddin: 8px;
+}
+/* End */
+/* /bitrix/components/hl/doska.list.konkurent/templates/.default/style.css?1481112047805 */
