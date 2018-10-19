@@ -23,6 +23,7 @@
     <script src="js/init.js"></script>
     <script>
         //block scrolling
+        
         $(document).ready(function() {
             var sHeight = $('#table1').height();
             var wHeight = $(window).height();
